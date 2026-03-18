@@ -12,6 +12,9 @@
         </p>
 
         <div class="button-row">
+          <a :href="contact.cvFile" download class="button-pill">
+            Download CV
+          </a>
           <a :href="contact.github" target="_blank" rel="noopener noreferrer" class="button-pill button-primary">
             View GitHub
           </a>
@@ -29,11 +32,15 @@
           </div>
           <div>
             <span>Email</span>
-            <strong>{{ contact.email }}</strong>
+            <strong>
+              <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+            </strong>
           </div>
           <div>
             <span>Phone</span>
-            <strong>{{ contact.phone }}</strong>
+            <strong>
+              <a :href="`tel:${contact.phoneLink}`">{{ contact.phone }}</a>
+            </strong>
           </div>
         </div>
       </article>
@@ -67,7 +74,7 @@
       </InfoPanel>
 
       <InfoPanel eyebrow="Featured" title="Main project">
-        <ProjectCard :project="projects[0]" />
+        <ProjectCard :project="projects[1]" />
       </InfoPanel>
     </section>
   </div>
@@ -83,11 +90,11 @@ import { contact, focusAreas, highlights, projects } from '../data/portfolio'
 .hero-grid {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
-  gap: 20px;
+  gap: 10px;
 }
 
 .hero-main {
-  min-height: 320px;
+  min-height: 200px;
   background:
     linear-gradient(135deg, rgba(255, 248, 237, 0.98), rgba(238, 251, 246, 0.94));
 }
@@ -104,28 +111,29 @@ import { contact, focusAreas, highlights, projects } from '../data/portfolio'
 
 h1 {
   margin-bottom: 6px;
-  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-size: clamp(1.45rem, 2.7vw, 2.15rem);
   line-height: 1;
 }
 
 .hero-name {
-  margin-bottom: 16px;
-  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
   color: var(--accent);
 }
 
 .hero-copy,
 .body-copy {
-  line-height: 1.75;
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .fact-list {
   display: grid;
-  gap: 16px;
+  gap: 6px;
 }
 
 .fact-list div {
-  padding: 16px;
+  padding: 10px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.08);
   transition: transform 160ms ease, background-color 160ms ease;
@@ -138,23 +146,27 @@ h1 {
 
 .fact-list span {
   display: block;
-  margin-bottom: 8px;
-  font-size: 0.75rem;
+  margin-bottom: 6px;
+  font-size: 0.56rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .fact-list strong {
-  font-size: 1rem;
+  font-size: 0.82rem;
   line-height: 1.5;
 }
 
+.fact-list a {
+  color: inherit;
+}
+
 .stat-grid {
-  gap: 12px;
+  gap: 6px;
 }
 
 .stat-item {
-  padding: 16px;
+  padding: 10px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(135deg, rgba(255, 245, 226, 0.86), rgba(237, 251, 247, 0.86));
@@ -172,15 +184,16 @@ h1 {
 
 .stat-item strong {
   display: block;
-  font-size: 1.15rem;
+  font-size: 0.88rem;
   color: var(--brand-strong);
 }
 
 .stat-item span {
   display: block;
-  margin-top: 6px;
+  margin-top: 5px;
   color: var(--muted);
-  line-height: 1.45;
+  font-size: 0.76rem;
+  line-height: 1.4;
 }
 
 .overview-lower {

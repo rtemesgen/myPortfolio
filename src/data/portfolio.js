@@ -5,15 +5,16 @@ export const contact = {
   email: 'trimontemesgen@gmail.com',
   phone: '+256741321674',
   phoneLink: '+256741321674',
-  whatsapp: '+211929993721',
-  whatsappLink: 'https://wa.me/211929993721',
+  whatsapp: '+256741321674',
+  whatsappLink: 'https://wa.me/256741321674',
+  cvFile: '/Rimon%20Temesgen%20CV.pdf',
   github: 'https://github.com/rtemesgen',
 }
 
 export const highlights = [
   { value: '10+', label: 'Years across technical and operations work' },
-  { value: '3+', label: 'Key software projects' },
-  { value: '2025+', label: 'Current Kampala field and client work' },
+  { value: '4', label: 'Software projects in portfolio' },
+  { value: 'Since 2025', label: 'Current Kampala field and client work' },
   { value: 'JWT + RBAC', label: 'Security and access control experience' },
 ]
 

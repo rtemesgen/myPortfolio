@@ -12,6 +12,9 @@
     </nav>
 
     <div class="header-actions">
+      <a :href="contact.cvFile" download class="button-pill">
+        Download CV
+      </a>
       <a
         :href="contact.whatsappLink"
         target="_blank"
@@ -34,27 +37,28 @@ import { contact } from '../data/portfolio'
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px 20px;
-  margin-bottom: 20px;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
 }
 
 .brand-name {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 1.3rem;
+  font-size: 0.98rem;
   color: #10233f;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-links a {
-  padding: 10px 14px;
+  padding: 7px 11px;
   border-radius: 999px;
   color: #4e6380;
+  font-size: 0.86rem;
 }
 
 .nav-links a.router-link-active {
@@ -66,7 +70,7 @@ import { contact } from '../data/portfolio'
 .header-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
 }
 
 @media (max-width: 760px) {

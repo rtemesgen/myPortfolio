@@ -42,13 +42,15 @@ import { contact, projects, skills } from '../data/portfolio'
 
 <style scoped>
 .intro {
-  line-height: 1.7;
+  font-size: 0.84rem;
+  line-height: 1.4;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  align-items: stretch;
 }
 
 @media (max-width: 720px) {

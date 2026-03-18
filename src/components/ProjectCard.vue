@@ -42,28 +42,43 @@ defineProps({
 
 <style scoped>
 .project-card {
-  padding: 22px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .top-row {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   align-items: start;
+}
+
+.top-row h3 {
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.top-row p {
+  font-size: 0.82rem;
+  line-height: 1.4;
 }
 
 .type-pill {
   flex-shrink: 0;
-  padding: 7px 11px;
+  padding: 5px 9px;
   border-radius: 999px;
   background: rgba(217, 151, 47, 0.16);
   color: #895616;
-  font-size: 0.78rem;
+  font-size: 0.64rem;
   font-weight: 700;
 }
 
 .links {
   margin-top: 16px;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 @media (max-width: 720px) {

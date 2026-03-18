@@ -50,21 +50,27 @@ import { education, experience, languages, strengths } from '../data/portfolio'
 
 <style scoped>
 .intro {
-  line-height: 1.7;
+  font-size: 0.84rem;
+  line-height: 1.4;
 }
 
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 18px;
+  gap: 10px;
 }
 
 .language-item,
 .education-item {
-  padding: 16px;
+  padding: 10px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(31, 79, 145, 0.04);
+}
+
+.language-item strong,
+.education-item h3 {
+  font-size: 0.88rem;
 }
 
 .language-item span,
@@ -72,10 +78,11 @@ import { education, experience, languages, strengths } from '../data/portfolio'
   display: block;
   margin-top: 6px;
   color: var(--muted);
+  font-size: 0.76rem;
 }
 
 .education-list {
   display: grid;
-  gap: 14px;
+  gap: 6px;
 }
 </style>

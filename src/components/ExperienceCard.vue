@@ -27,14 +27,24 @@ defineProps({
 
 <style scoped>
 .experience-card {
-  padding: 22px;
+  padding: 14px;
 }
 
 .top-row {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px;
   align-items: start;
+}
+
+.top-row h3 {
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.company,
+.muted {
+  font-size: 0.84rem;
 }
 
 .company {
@@ -43,11 +53,11 @@ defineProps({
 
 .period {
   flex-shrink: 0;
-  padding: 7px 11px;
+  padding: 5px 9px;
   border-radius: 999px;
   background: rgba(31, 79, 145, 0.08);
   color: #23466e;
-  font-size: 0.8rem;
+  font-size: 0.66rem;
   font-weight: 700;
 }
 

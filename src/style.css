@@ -71,17 +71,17 @@ button:hover {
 .app-shell {
   width: min(1480px, calc(100% - 24px));
   margin: 0 auto;
-  padding: 24px 0 40px;
+  padding: 8px 0 14px;
 }
 
 .page-stack {
   display: grid;
-  gap: 20px;
+  gap: 14px;
 }
 
 .panel {
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
+  border-radius: 20px;
   background:
     linear-gradient(180deg, rgba(255, 252, 247, 0.9), rgba(250, 255, 252, 0.82));
   box-shadow: var(--shadow);
@@ -98,26 +98,26 @@ button:hover {
 }
 
 .panel:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 54px rgba(28, 66, 78, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(28, 66, 78, 0.14);
   border-color: rgba(15, 95, 115, 0.18);
 }
 
 .section-card {
-  padding: 24px;
+  padding: 12px;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   align-items: end;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .eyebrow {
-  margin: 0 0 10px;
-  font-size: 0.74rem;
+  margin: 0 0 8px;
+  font-size: 0.64rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
@@ -141,7 +141,7 @@ p {
 
 h2 {
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.14rem;
 }
 
 .muted {
@@ -151,19 +151,20 @@ h2 {
 .button-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 6px;
 }
 
 .button-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 16px;
+  min-height: 34px;
+  padding: 0 11px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.82);
   color: var(--text);
+  font-size: 0.86rem;
 }
 
 .button-primary {
@@ -202,19 +203,19 @@ h2 {
 .chip-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
 }
 
 .chip {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  padding: 0 12px;
+  min-height: 26px;
+  padding: 0 8px;
   border-radius: 999px;
   border: 1px solid rgba(15, 95, 115, 0.12);
   background: linear-gradient(135deg, rgba(240, 176, 79, 0.18), rgba(110, 201, 174, 0.14));
   color: #215160;
-  font-size: 0.88rem;
+  font-size: 0.74rem;
   transition:
     transform 160ms ease,
     box-shadow 160ms ease,
@@ -230,30 +231,31 @@ h2 {
 .grid-two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  gap: 10px;
 }
 
 .grid-three {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 10px;
 }
 
 .grid-auto-fit {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 18px;
+  gap: 10px;
 }
 
 .list-clean {
   display: grid;
-  gap: 10px;
+  gap: 6px;
   padding-left: 18px;
-  margin: 16px 0 0;
+  margin: 10px 0 0;
 }
 
 .list-clean li {
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.88rem;
 }
 
 .list-clean li::marker {
@@ -270,7 +272,7 @@ h2 {
 @media (max-width: 720px) {
   .app-shell {
     width: min(100% - 16px, 100%);
-    padding: 16px 0 28px;
+    padding: 10px 0 20px;
   }
 
   .panel {
@@ -278,7 +280,7 @@ h2 {
   }
 
   .section-card {
-    padding: 18px;
+    padding: 14px;
   }
 
   .section-header {
