@@ -1,7 +1,7 @@
 export const contact = {
   name: 'Rimon Temesgen',
-  title: 'Junior Full-Stack Developer',
-  location: 'Bakuli, Kampala, Uganda',
+  title: 'Full-Stack Developer & Technical Support Engineer',
+  location: 'Kampala, Uganda',
   email: 'trimontemesgen@gmail.com',
   phone: '+256741321674',
   phoneLink: '+256741321674',
@@ -12,33 +12,43 @@ export const contact = {
 }
 
 export const highlights = [
-  { value: '10+', label: 'Years across technical and operations work' },
-  { value: '4', label: 'Software projects in portfolio' },
-  { value: 'Since 2025', label: 'Current Kampala field and client work' },
-  { value: 'JWT + RBAC', label: 'Security and access control experience' },
+  { value: '10+', label: 'Years of hands-on repair, IT, and technical troubleshooting' },
+  { value: '7+', label: 'Software and business systems in portfolio' },
+  { value: '3+', label: 'Years across IT support, networking, and CCTV work' },
+  { value: 'JWT + RBAC', label: 'Secure API and access-control implementation' },
 ]
 
 export const focusAreas = [
-  'Vue.js frontend development',
-  'Node.js and Express backend work',
-  'MongoDB and REST API integration',
-  'Phone repair and technical troubleshooting',
-  'CCTV installation and maintenance',
-  'Networking setup and support',
+  'Full-stack web application development',
+  'Vue.js, React, and responsive frontend work',
+  'Node.js, Express, and Spring Boot APIs',
+  'SQL, PostgreSQL, MongoDB, and REST integration',
+  'Retail, accounting, and reporting systems',
+  'IT support, networking, CCTV, and troubleshooting',
 ]
 
 export const skills = [
   'JavaScript',
+  'TypeScript',
   'Vue.js',
+  'React',
   'Vue Router',
   'Pinia',
   'Node.js',
   'Express.js',
-  'MongoDB',
-  'MongoDB Atlas',
+  'Spring Boot',
   'REST APIs',
   'JWT Authentication',
   'RBAC',
+  'bcrypt',
+  'CORS',
+  'MongoDB',
+  'MongoDB Atlas',
+  'SQL',
+  'PostgreSQL',
+  'H2 Database',
+  'Docker',
+  'Expo',
   'Axios',
   'HTML',
   'CSS',
@@ -49,10 +59,91 @@ export const skills = [
   'Computer Networking',
   'System Maintenance',
   'CCTV Installation',
+  'Hardware Troubleshooting',
   'Phone Repair',
+  'Accounting Reports',
 ]
 
 export const projects = [
+  {
+    name: 'KGL Grocery Management System',
+    type: 'Full-stack platform',
+    summary:
+      'A branch-aware grocery and distribution management platform for sales, procurement, inventory, expenses, collections, accounting, reporting, and user administration.',
+    stack: ['Vue.js', 'Node.js', 'Express', 'MongoDB Atlas', 'Pinia', 'Axios', 'JWT', 'RBAC'],
+    points: [
+      'Built a centralized backend and Vue frontend for multi-branch retail operations.',
+      'Implemented JWT authentication, role-based access control, and branch-based data handling.',
+      'Created REST APIs connected to MongoDB Atlas and documented the backend with Swagger.',
+      'Supported operational workflows for sales, stock control, reporting, accounting, and collections.',
+    ],
+    links: [
+      { label: 'Live App', href: 'https://kglgrocery.vercel.app/' },
+      { label: 'API Docs', href: 'https://kgl-backend-node.onrender.com/api-docs/#/' },
+      { label: 'Frontend Repo', href: 'https://github.com/rtemesgen/KGL-Frontend-Vue' },
+      { label: 'Backend Repo', href: 'https://github.com/rtemesgen/KGL-Backend-Node' },
+    ],
+  },
+  {
+    name: 'Duqact / Mobi Agent',
+    type: 'Full-stack system',
+    summary:
+      'A mobile money operations platform for managing agent accounts, wallets, transactions, channels, exchange rates, shops, profiles, and admin workflows.',
+    stack: ['React', 'TypeScript', 'Spring Boot', 'REST APIs', 'JWT', 'PostgreSQL-ready', 'H2'],
+    points: [
+      'Developed a structured mobile money operations system as part of Satesoft internship work.',
+      'Built role-aware workflows for agents, shops, accounts, wallets, and transaction management.',
+      'Used Spring Boot REST APIs with JWT authentication and database-ready persistence design.',
+    ],
+    links: [
+      { label: 'GitHub Repo', href: 'https://github.com/rtemesgen/duqact-agent' },
+      { label: 'Live App', href: 'https://duqact.vercel.app' },
+    ],
+  },
+  {
+    name: 'Mathan Apps',
+    type: 'Business application',
+    summary:
+      'A modern business application project focused on practical retail and operations workflows using a TypeScript-based stack.',
+    stack: ['TypeScript', 'Frontend Architecture', 'Business Workflows'],
+    points: [
+      'Worked on a real business-focused application for structured operational use cases.',
+      'Applied modern frontend patterns and clean project organization.',
+      'Focused on practical workflows that support small-business management and reporting needs.',
+    ],
+    links: [
+      { label: 'GitHub Repo', href: 'https://github.com/rtemesgen/mathan-apps' },
+    ],
+  },
+  {
+    name: 'Receipt Manager',
+    type: 'Full-stack app',
+    summary:
+      'A small full-stack receipt management app built from a client-style request with authentication, receipt creation, business settings, preview, printing, and saved receipt management.',
+    stack: ['React', 'Spring Boot', 'H2', 'Authentication', 'Receipt Printing'],
+    points: [
+      'Built a focused business tool for creating, previewing, printing, and managing receipts.',
+      'Implemented editable receipt settings and saved receipt workflows.',
+      'Used the project to strengthen full-stack understanding across frontend, backend, and persistence.',
+    ],
+    links: [
+      { label: 'Live App', href: 'https://receipt-ivory.vercel.app' },
+      { label: 'GitHub Repo', href: 'https://github.com/rtemesgen/receipt_manager' },
+    ],
+  },
+  {
+    name: 'Tibeb E-Learning Platform',
+    type: 'Contract project',
+    summary:
+      'An e-learning software project where I serve as the contractor developer responsible for building the application experience and technical implementation.',
+    stack: ['Web App Development', 'Backend Integration', 'Payment Planning', 'E-Learning'],
+    points: [
+      'Working as the sole contractor developer for an education-focused software platform.',
+      'Supporting planning around international payment options and backend deployment choices.',
+      'Building practical software features for course, learner, and platform workflows.',
+    ],
+    links: [],
+  },
   {
     name: 'Refactory Clone',
     type: 'Early assessment',
@@ -66,40 +157,6 @@ export const projects = [
     ],
     links: [
       { label: 'GitHub Repo', href: 'https://github.com/rtemesgen/Refactory-Clone' },
-    ],
-  },
-  {
-    name: 'KGL Grocery Management System',
-    type: 'Full-stack platform',
-    summary:
-      'A business-focused grocery management platform supporting inventory, sales, and role-based workflows.',
-    stack: ['Vue.js', 'Node.js', 'Express', 'MongoDB Atlas', 'Pinia', 'Axios'],
-    points: [
-      'Built the frontend and backend for a workflow-driven business system.',
-      'Implemented JWT authentication and role-based access control.',
-      'Created Express APIs and connected them to MongoDB Atlas.',
-      'Supported inventory, sales, and reporting use cases.',
-    ],
-    links: [
-      { label: 'Live App', href: 'https://kglgrocery.vercel.app/' },
-      { label: 'Frontend Repo', href: 'https://github.com/rtemesgen/KGL-Frontend-Vue' },
-      { label: 'Backend Repo', href: 'https://github.com/rtemesgen/KGL-Backend-Node' },
-      { label: 'API Docs', href: 'https://kgl-backend-node.onrender.com/api-docs/#/' },
-    ],
-  },
-  {
-    name: 'Vue Roadmap Self-Study Projects',
-    type: 'Frontend practice',
-    summary:
-      'A focused set of Vue learning projects used to strengthen architecture, reactivity, and UI skills.',
-    stack: ['Vue.js', 'Components', 'Events', 'Reactivity', 'Responsive UI'],
-    points: [
-      'Built multiple practice apps covering core Vue concepts.',
-      'Improved component structure and frontend organization.',
-      'Strengthened responsive layout and state-driven rendering skills.',
-    ],
-    links: [
-      { label: 'GitHub Repo', href: 'https://github.com/rtemesgen/vueRoadmapSelfStudy' },
     ],
   },
   {
@@ -121,6 +178,50 @@ export const projects = [
 
 export const experience = [
   {
+    title: 'Software Developer Intern',
+    company: 'Satesoft-Corporation',
+    location: 'Uganda',
+    period: '2026 - Present',
+    points: [
+      'Contribute as one of the main developers on Duqact, a retail software product for web and mobile use.',
+      'Build and improve application workflows for retail shops and business operations.',
+      'Work across frontend and backend implementation using modern full-stack development practices.',
+    ],
+  },
+  {
+    title: 'Contract Software Developer',
+    company: 'Tibeb E-Learning Platform',
+    location: 'Uganda / Remote',
+    period: '2026 - Present',
+    points: [
+      'Work as the sole contractor developer for an e-learning software platform.',
+      'Develop platform features and advise on backend deployment and payment-gateway options.',
+      'Translate education and business requirements into practical web application workflows.',
+    ],
+  },
+  {
+    title: 'Part-Time Accountant & Operations Support',
+    company: 'Jolly General Trading',
+    location: 'Juba, South Sudan',
+    period: 'June 2025 - Present',
+    points: [
+      'Review stock, balances, and cash flow weekly for a retail business with two branches and trucks.',
+      'Prepare monthly reports and support quarterly, half-year, and annual audit work.',
+      'Develop custom software to help manage stock, financial records, and business operations.',
+    ],
+  },
+  {
+    title: 'Part-Time Accountant, Purchaser & Store Manager',
+    company: 'Pison Supermarket',
+    location: 'Uganda',
+    period: 'August 2025 - March 2026',
+    points: [
+      'Handled accounting records, purchasing support, staff coordination, and store operations.',
+      'Prepared business records and supported financial reporting for day-to-day management.',
+      'Balanced customer service, supplier follow-up, stock needs, and internal operations.',
+    ],
+  },
+  {
     title: 'CCTV, Networking & Maintenance Technician',
     company: 'Independent / Field Work',
     location: 'Kampala, Uganda',
@@ -129,27 +230,6 @@ export const experience = [
       'Carry out CCTV installation, maintenance, and troubleshooting for clients.',
       'Support networking setup, repairs, and general technical maintenance work.',
       'Apply field troubleshooting skills across security systems and connectivity issues.',
-    ],
-  },
-  {
-    title: 'Part-Time Accountant & Store Manager',
-    company: 'Pison Supermarket',
-    location: 'Kampala, Uganda',
-    period: 'June 2025 - February 2026',
-    points: [
-      'Managed daily store operations and supervised staff activities.',
-      'Handled financial records, transactions, and reporting.',
-      'Supported customer service and smoother day-to-day operations.',
-    ],
-  },
-  {
-    title: 'Part-Time Accountant',
-    company: 'Jolly General Trading',
-    location: 'Juba, South Sudan',
-    period: 'June 2025 - Present',
-    points: [
-      'Managed financial records and daily transactions.',
-      'Supported reporting and business operations.',
     ],
   },
   {
@@ -214,17 +294,27 @@ export const education = [
   {
     title: 'Software Development Program',
     school: 'Refactory Academy, Uganda',
-    period: 'Completed',
+    period: 'November 2025 - March 2026',
   },
   {
     title: 'Bachelor of Computer Engineering',
-    school: 'EIT, Eritrea',
-    period: '2017',
+    school: 'Eritrea Institute of Technology, Eritrea',
+    period: '2015 - 2020',
+  },
+  {
+    title: 'Diploma Level 2 in General Electronics',
+    school: 'Poly-Tech Training Institute, Eritrea',
+    period: 'March 2015',
+  },
+  {
+    title: 'Certificate in Pedagogy',
+    school: 'Ministry of Education, Eritrea',
+    period: '2021',
   },
   {
     title: 'Vocational Certificate in Accounting',
     school: 'Tally and Peachtree, Juba, South Sudan',
-    period: '2023',
+    period: 'June 2023 - August 2023',
   },
   {
     title: 'Vocational Course in HR Management',
@@ -241,7 +331,8 @@ export const languages = [
 ]
 
 export const strengths = [
+  'Full-stack development experience across Vue.js, React, Node.js, Express, Spring Boot, MongoDB, SQL, and PostgreSQL-ready systems.',
   'Strong foundation in troubleshooting, phone repair, computer maintenance, networking, and CCTV support.',
-  'Experience in accounting, retail operations, sales support, and business process management.',
+  'Experience in accounting, retail operations, purchasing, reporting, audits, and business process management.',
   'Comfortable working across technical, operational, and customer-facing responsibilities.',
 ]
